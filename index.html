@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website about our group, aoy0!">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="stylesheet" href="interface.css">
+        <title>Bitx96</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <hr>
+        <div class="search-bar">
+            <input id="searchInput" placeholder="Search">
+            <button id="searchButton" style="background-color: rgb(125, 125, 125);">🔍</button>
+        </div>
+        <br>
+        <div class="container" style="grid-gap: 5px; grid-template-columns: repeat(8, 1fr)">
+            <div class="item" style="width: 100px"><a class="cool-button" href="scripts">Scripts</a></div>
+            <div class="item" style="width: 100px"><a class="cool-button" href="https://proxy.bitx96.com">Proxies</a></div>
+        </div>
+    </body>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+        const results = document.querySelectorAll('.item');
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = searchInput.value.toLowerCase();
+            results.forEach((result) => {
+            const content = result.textContent.toLowerCase();
+            if (content.includes(query)) {
+                result.style.display = 'block';
+            } else {
+                result.style.display = 'none';
+                }
+            });
+        }
+        searchButton.addEventListener('click', handleSearch)
+    </script>
+</html>
