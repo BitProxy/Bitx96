@@ -107,6 +107,11 @@ h3 {
   margin: 0 0 24px;
 }
 
+img {
+  outline: 2px solid white;
+  border-radius: 4px;
+}
+
 p {
   color: #f8f8f8;
   font-family: 'Raleway',sans-serif;
