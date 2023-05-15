@@ -1,0 +1,89 @@
+/* Made by BitProxy */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.cool-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(46, 46, 46);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.cool-button:hover {
+  background-color: rgb(24, 24, 24);
+}
+
+.shimmer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, #f2f2f2 0%, #e6e6e6 50%, #f2f2f2 100%);
+  animation: shimmer-animation 2s infinite;
+}
+
+@keyframes shimmer-animation {
+  0% {
+    background-position: -200px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+body {
+  font-family: 'Osswald', sans-serif;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	width: 300px;
+	height: 40px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input {
+	flex: 1;
+	height: 100%;
+	padding: 10px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	background-color: transparent;
+	color: rgb(100, 100, 100);
+}
+
+.search-bar button {
+	width: 40px;
+	height: 100%;
+	background-color: rgb(46, 46, 46);
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.search-bar button i {
+	color: #fff;
+}
+
+@font-face {
+  font-family: 'Osswald';
+  src: url('https://games.bitx96.com/aoy0/font/Oswald-Regular.ttf') format('truetype');
+}
