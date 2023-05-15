@@ -37,19 +37,6 @@
   animation: shimmer-animation 2s infinite;
 }
 
-@keyframes shimmer-animation {
-  0% {
-    background-position: -200px;
-  }
-  100% {
-    background-position: 200px;
-  }
-}
-
-body {
-  font-family: 'Osswald', sans-serif;
-}
-
 .search-bar {
 	display: flex;
 	align-items: center;
@@ -83,7 +70,64 @@ body {
 	color: #fff;
 }
 
+@keyframes shimmer-animation {
+  0% {
+    background-position: -200px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+h1 {
+  font-family: 'Osswald', sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: 'Osswald',sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  margin: 0 0 24px;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: 'Osswald',sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 20px;
+  margin: 0 0 24px;
+}
+
+p {
+  color: #f8f8f8;
+  font-family: 'Raleway',sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
+
+li {
+  font-family: 'Osswald', sans-serif;
+  height: 24px;
+  color: rgb(248, 248, 248);
+}
+
+body {
+  font-family: 'Osswald', sans-serif;
+  background-color: rgb(45, 45, 45);
+}
+
 @font-face {
   font-family: 'Osswald';
-  src: url('https://games.bitx96.com/aoy0/font/Oswald-Regular.ttf') format('truetype');
+  src: url('https://bitx96.com/font/Oswald-Regular.ttf') format('truetype');
 }
