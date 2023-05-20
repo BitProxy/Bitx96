@@ -66,6 +66,21 @@
 				font-family: 'Osswald', sans-serif;
                 background-color: rgb(66, 66, 66)
             }
+pre {
+	background-color: #f5f5f5;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+code {
+	font-family: "Courier New", monospace;
+}
+
+.copy-button {
+	margin-top: 10px;
+}
+
             @font-face {
   font-family: 'Osswald';
   src: url('https://www.bitx96.com/font/Oswald-Regular.ttf') format('truetype');
