@@ -1,87 +1,189 @@
-        	.nbutton {
-            	display: inline-block;
-                padding: 10px 20px;
-                background-color: rgb(45, 45, 45);
-                color: white;
-                border: none;
-                border-radius: 4px;
-                font-size: 16px;
-                cursor: pointer;
-                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-            }
-            .nbutton:hover {
-            	background-color: rgb(77, 77, 77);
-                color: rgb(222, 222, 222);
-            }
-            .nbutton:active {
-            	background-color: rgb(22, 22, 22);
-                color: rgb(175, 175, 175);
-            }
-            .search-container {
-            	display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 20px;
-            }
-            .search-container input[type="text"] {
-            	padding: 10px;
-                font-size: 16px;
-                border: none;
-                border-radius: 4px;
-                color: white;
-                background-color: rgb(40,40,40);
-                width: 300px;
-                margin-right: 10px;
-            }
-            .frame-container {
-            	display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .frame {
-            	width: 200px;
-                margin: 10px;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                text-align: center;
-                background-color: rgb(248, 248, 248)
-            }
-            .frame img {
-            	width: 100%;
-                max-height: 200px;
-                object-fit: cover;
-                border-radius: 4px;
-                margin-bottom: 10px;
-            }
-            .frame h3 {
-            	font-size: 18px;
-                margin-bottom: 5px;
-            }
-            .frame p {
-            	font-size: 14px;
-                color: #666;
-            }
-            body {
-				font-family: 'Osswald', sans-serif;
-                background-color: rgb(66, 66, 66)
-            }
-pre {
-	background-color: #f5f5f5;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+.nbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-code {
-	font-family: "Courier New", monospace;
+.nbutton:hover {
+    background-color: rgb(77, 77, 77);
+    color: rgb(222, 222, 222);
+}
+
+.nbutton:active {
+    background-color: rgb(22, 22, 22);
+    color: rgb(175, 175, 175);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(40,40,40);
+    width: 300px;
+    margin-right: 10px;
+}
+
+.frame-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.frame {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgb(248, 248, 248)
+}
+
+.frame img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.frame h3 {
+    font-size: 18px;
+    margin: auto;
+}
+
+.frame p {
+    font-size: 14px;
+    color: #666;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+    margin: auto;
+}
+
+body {
+    font-family: 'Osswald', sans-serif;
+    background-color: rgb(66, 66, 66)
+}
+
+.heading1 {
+    font-family: 'Osswald', sans-serif;
+    background-color: rgb(36, 36, 36);
+    font-size: 46px;
+    color: white;
+    border-radius: 8px;
+    line-height: 1.5em;
+    border-style: none;
+    border: 1px solid rgb(55, 55, 55);
+    margin: auto;
+}
+
+.code-container {
+	position: relative;
+    display: inline-block;
+}
+
+.code-container pre {
+    background-color: rgb(33, 33, 33);
+    padding: 10px;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    overflow: hidden;
 }
 
 .copy-button {
-	margin-top: 10px;
+	position: absolute;
+    top: 23px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(1, 158, 255);
+    width: 26px;
+    height: 25px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out
 }
 
-            @font-face {
-  font-family: 'Osswald';
-  src: url('https://www.bitx96.com/font/Oswald-Regular.ttf') format('truetype');
+.copy-button:hover {
+    background-color: rgb(25, 200, 255);
+    color: rgb(222, 222, 222);
+}
+
+.copy-button:active {
+    background-color: rgb(1, 100, 150);
+    color: rgb(175, 175, 175);
+}
+
+.copy-button img {
+    left: 18px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Lua Syntaxing */
+
+.lua-code {
+    color: rgb(148, 148, 148);
+}
+
+.lua-keyword {
+    color: #008000;
+    font-weight: bold;
+}
+
+.lua-comment {
+    color: #888888;
+    font-style: italic;
+}
+
+.lua-string {
+    color: #800080;
+}
+
+.lua-number {
+    color: #0000FF;
+}
+
+/* Warning */
+.underconstruction {
+    background-color: #f8d7da;
+    border: 1px solid #f5c7cb;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.underconstruction-image {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.underconstruction-text {
+    color: #721c24;
+}
+
+@font-face {
+    font-family: 'Osswald';
+    src: url('https://www.bitx96.com/font/Oswald-Regular.ttf') format('truetype');
 }
