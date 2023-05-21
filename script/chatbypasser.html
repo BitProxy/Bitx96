@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="SIGMA LIGMAZ one of many accounts active.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="https://www.bitx96.com/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Chat Bypasser</title>
+    </head>
+    <body>
+        <h1 style="font-size: 56px; margin: auto; color: white">Chat Bypasser</h1>
+        <hr>
+        <p class="heading1">Exploit Script Source</p>
+        <div class="code-container" style="width: 100%">
+            <pre id="code-line"><code class="lua-code"><span class="lua-keyword">loadstring</span><span class="lua-code">(<span class="lua-keyword">game</span><span class="lua-code">:HttpGet(</span><span class="lua-string">"https://raw.githubusercontent.com/BitProxy/RBLXScripts/main/chatbypasser.lua"</span><span class="lua-code">))()</span></code></pre>
+            <button class="copy-button" onclick="CopyToClipboard()"><img src="copy-icon.png" alt="Copy"></button>
+        </div>
+        <p style="font-family: Arial, Helvetica, sans-serif">Chat Bypasser (BitProxy's version) is currently on version <b>0.3.0</b>. The only possible way to get <b>banned</b> is by an exploit detection or <b>threads about you with proof bypassing the chat system.</b> To delete the annoying ui permanently is by running the function `deleteui()`.</p>
+        <p>Screenshots of <b>Chat Bypasser</b> - By BitProxy.</p>
+        <div class="frame-container" style="justify-content: left;">
+            <div class="frame">
+                <img src="https://images.bitx96.com/scripts/chatbypasser/chat1.png" alt="Chat-Image">
+                <h3>Public Chat.</h3>
+                <p>It is shown publicly, keep in mind that you will get some <b>attention</b>.</p>
+            </div>
+            <div class="frame">
+                <img src="https://images.bitx96.com/scripts/chatbypasser/iOS.jpg" alt="iOS-ScriptWare">
+                <h3>iOS Script.</h3>
+                <p>An example of chat bypasser on iOS, <b>(Script-Ware)</b></p>
+            </div>
+            <div class="frame">
+                <img src="https://images.bitx96.com/scripts/chatbypasser/credentials.png" alt="Credentials">
+                <h3>Credits</h3>
+                <p>Listed in the image.</p>
+            </div>
+        </div>
+        <hr>
+        <p class="heading1">Server Script Source</p>
+        <div class="underconstruction" style="margin-top: 5px">
+            <img class="underconstruction-image" src="https://images.bitx96.com/warning.png" alt="Warning-Image">
+            <span class="warning-text">Currently being scripted.</span>
+        </div>
+        <div class="code-container" style="width: 100%">
+            <pre id="code-line-server"><code class="lua-code"><span class="lua-comment">-- Script not available.</span><br><span class="lua-keyword">warn</span><span class="lua-code">(</span><span class="lua-string">"ServerSided Chat Bypasser not made."</span><span class="lua-code">)</span></code></pre>
+            <button class="copy-button" onclick="CopyToClipboard2()"><img src="copy-icon.png" alt="Copy"></button>
+        </div>
+    </body>
+    <script>
+        function CopyToClipboard() {
+            var CodeLine = document.getElementById("code-line");
+            var range = document.createRange();
+            range.selectNode(CodeLine);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+        }
+        function CopyToClipboard2() {
+            var CodeLine = document.getElementById("code-line-server");
+            var range = document.createRange();
+            range.selectNode(CodeLine);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+</html>
