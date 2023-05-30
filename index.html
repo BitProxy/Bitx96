@@ -2,43 +2,49 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Website about BitProxy and more!">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Navigate throughout Bitx96!">
+        <meta name="keywords" content="bitzeh, bitx96, bitx32, bitx33, bitx67, bitx99, bitproxy, bits, games">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="icon" type="image/x-icon" href="https://www.bitx96.com/favicon.png">
         <link rel="stylesheet" href="interface.css">
         <title>Bitx96</title>
     </head>
     <body>
-        <header>
-            <div class="blur-effect"></div>
+        <header id="prompt-heading">
+            <div id="error-prompt" class="hidden">
+                <img src="https://images.bitx96.com/ErrorIconSmall.png" id="error-icon">
+                <h3 id="error-title">Internal Error</h3>
+                <hr id="error-hr">
+                <span id="error-message">Something went wrong!</span>
+            </div>
+        </header>
+        <div class="navigation-bar">
+            <a href="">Home</a>
+            <a href="info">Information</a>
+            <a href="policy">Privacy Policy</a>
+        </div>
+        <div id="main-content">
             <h1>Welcome</h1>
             <hr>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="https://www.bitx96.com/info">Information</a></li>
-                    <li><a href="https://www.bitx96.com/scripts">Scripts</a></li>
-                    <li><a href="https://proxy.bitx96.com">Web Proxies</a></li>
-                </ul>
-            </nav>
-        </header>
-        <br>
-        <div class="grid-container">
-            <a class="grid-item" id="user1" href="https://users.bitx96.com/user/1">
-                <img src="https://images.bitx96.com/thumbnails/user1.png" alt="user1" id="user1_avatar">
-                <p class="displayname">...</p>
-                <p class="username">@[User Deleted (1)]</p>
-            </a>
-            <a class="grid-item" id="user4" href="https://users.bitx96.com/user/4">
-                <img src="https://images.bitx96.com/thumbnails/user4.png" alt="user4" id="user4_avatar">
-                <p class="displayname">Ur mom</p>
-                <p class="username">@Evilance</p>
-            </a>
-            <a class="grid-item" id="user4" href="https://users.bitx96.com/user/5">
-                <img src="https://images.bitx96.com/thumbnails/user5.png" alt="user5" id="user5_avatar">
-                <p class="displayname-special">Bitzeh</p>
-                <p class="username">@bit</p>
-            </a>
+            <script src="system.js"></script>
+            <br>
+            <div class="grid-container">
+                <a class="grid-item" id="user1" href="https://users.bitx96.com/user/1">
+                    <img src="https://images.bitx96.com/thumbnails/user1.png" alt="user1" id="user1_avatar">
+                    <p class="displayname">...</p>
+                    <p class="username">@[User Deleted (1)]</p>
+                </a>
+                <a class="grid-item" id="user4" href="https://users.bitx96.com/user/4">
+                    <img src="https://images.bitx96.com/thumbnails/user4.png" alt="user4" id="user4_avatar">
+                    <p class="displayname">Ur mom</p>
+                    <p class="username">@Evilance</p>
+                </a>
+                <a class="grid-item" id="user4" href="https://users.bitx96.com/user/5">
+                    <img src="https://images.bitx96.com/thumbnails/user5.png" alt="user5" id="user5_avatar">
+                    <p class="displayname-special">Bitzeh</p>
+                    <p class="username">@bit</p>
+                </a>
+            </div>
         </div>
     </body>
 </html>
