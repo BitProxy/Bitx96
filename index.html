@@ -47,4 +47,13 @@
             </div>
         </div>
     </body>
+    <script>
+        function setMainContentHeight() {
+            var WindowHeight = window.innerHeight;
+            var MainContent = document.getElementById('main-content');
+            MainContent.style.height = WindowHeight + 'px';
+        }
+        window.addEventListener('load', setMainContentHeight);
+        window.addEventListener('resize', setMainContentHeight);
+    </script>
 </html>
