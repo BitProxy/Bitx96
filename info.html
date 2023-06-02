@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Information about Bitx96!">
-        <meta name="keywords" content="HTML, CSS">
+        <meta name="description" content="Information about BitProxy!">
+        <meta name="keywords" content="bitzeh, bitx96, bitx32, bitx33, bitx67, bitx99, bitproxy, bits, games, info, information, bit info, bitx info, bitzeh info, bitzeh roblox, roblox, furry">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="icon" type="image/x-icon" href="https://www.bitx96.com/favicon.png">
         <link rel="stylesheet" href="interface.css">
         <title>Bitx96 - Information</title>
     </head>
     <body>
-        <h1>Information</h1>
-        <hr>
-        <h2>BitProxy</h2>
-        <p>BitProxy known as TheNostalgiaFeeling, ItsTheGirlSophia, Bitzeh and Bitx32. Born in December 7th of 2009. Mostly plays Roblox, like a no-life.</p>
-        <img src="imgs/moderation_1.png" alt="Account Deleted:BitProxy" style="width: 75%;">
-        <p>This moderation note was received on <b onclick="window.open('https://roblox.com/users/3523136467/profile')">BitProxy</b>. Yes, it infact was a true termination speaking from me, BitProxy. That's all I'll say for now.</p>
-        <img src="imgs/bitsavatar.png" alt="BitsProxy:Avatar" style="width: 50%" onclick="window.open('https://roblox.com/users/847726308/profile')"><p>New registered account.</p>
-        <hr>
-        <h2>Bitx32</h2>
-        <p>A random name which also refers to <b style="color: rgb(138, 43, 226)">Bitx96</b>, <b style="color: rgb(200, 148, 150)">Bitx56</b>, <b style="color: rgb(148, 199, 172)">Bitx67</b>, etc.</p>
-        <hr>
-        <p>I'm new to these HTML, CSS, JavaScripts, etc so that's why there's really no content in each page.</p>
+        <div class="navigation-bar">
+            <a href="">Home</a>
+            <a href="info" class="selected-button">Information</a>
+            <a href="policy">Privacy Policy</a>
+        </div>
+        <div id="main-content">
+            <h1>Info</h1>
+            <hr>
+            <h2>BitProxy</h2>
+            <p>BitProxy known as TheNostalgiaFeeling, ItsTheGirlSophia, Bitzeh and Bitx32. Born in December 7th of 2009. Mostly plays Roblox, like a no-life.</p>
+            <img src="imgs/moderation_1.png" alt="Account Deleted:BitProxy" style="width: 50%;">
+            <p>This moderation note was received on <b onclick="window.open('https://roblox.com/users/3523136467/profile')">BitProxy</b>. Yes, it infact was a true termination speaking from me, BitProxy. That's all I'll say for now.</p>
+            <img src="https://images.bitx96.com/avatar/avatar612023548.png" alt="Bitzeh:Avatar" style="width: 20%" onclick="window.open('https://roblox.com/users/3825760092/profile')"><p>New registered account.</p>
+            <hr>
+            <h2>Bitx32</h2>
+            <p>A random name which also refers to <b style="color: rgb(138, 43, 226)">Bitx96</b>, <b style="color: rgb(200, 148, 150)">Bitx56</b>, <b style="color: rgb(148, 199, 172)">Bitx67</b>, etc.</p>
+            <hr>
+            <p>I'm new to these HTML, CSS, JavaScripts, etc so that's why there's really no content in each page.</p>
+        </div>
     </body>
+    <script>
+        function setMainContentHeight() {
+            var WindowHeight = window.innerHeight;
+            var MainContent = document.getElementById('main-content');
+            MainContent.style.height = WindowHeight + 'px';
+        }
+        window.addEventListener('load', setMainContentHeight);
+        window.addEventListener('resize', setMainContentHeight);
+    </script>
 </html>
