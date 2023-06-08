@@ -2,51 +2,41 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Navigate throughout Bitx96!">
-        <meta name="keywords" content="bitzeh, bitx96, bitx32, bitx33, bitx67, bitx99, bitproxy, bits, games">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="https://www.bitx96.com/favicon.png">
-        <link rel="stylesheet" href="interface.css">
+        <meta name="author" content="Bitx32">
+        <meta name="description" content="Main page of Bitx96. Come visit to explore!">
+        <meta name="keywords" content="Roblox, Lua, Programs">
         <title>Bitx96</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <header id="prompt-heading">
-            <div id="error-prompt" class="hidden">
-                <img src="https://images.bitx96.com/ErrorIconSmall.png" id="error-icon">
-                <h3 id="error-title">Internal Error</h3>
-                <hr id="error-hr">
-                <span id="error-message">Something went wrong!</span>
-            </div>
-        </header>
-        <div class="navigation-bar">
-            <a href="">Home</a>
-            <a href="exploits">Exploits</a>
-            <a href="info">Information</a>
-            <a href="policy">Privacy Policy</a>
-        </div>
-        <div id="main-content">
-            <h1>Welcome</h1>
-            <hr>
-            <br>
-            <div class="grid-container">
-                <a class="grid-item" onclick="PromptError('Please come back at a different date.\nMessage: Not Finished.')">
-                    <img src="https://images.bitx96.com/lua.png" alt="Roblox-Scripts">
-                    <h3 style="color: black;margin: 2;padding: 0">Scripts</h3>
-                    <p style="color: black">Roblox scripts used on Roblox's Exploits.</p>
-                </a>
-                <a class="grid-item" id="user4" href="https://users.bitx96.com/user/5">
-                    <img src="https://images.bitx96.com/thumbnails/user5.png" alt="user5" id="user5_avatar">
-                    <p class="displayname-special">Bitzeh</p>
-                    <p class="username">@bit</p>
-                </a>
-            </div>
-            <script src="system.js"></script>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="#" class="logo">
+                        <img src="https://images.bitx96.com/bit.png" alt="bitx32" style="width: 48px; height: 48px;">
+                        <span class="navigation-item">Bitx96</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <i class="fas fa-home"></i>
+                    <span class="navigation-item">Home</span>
+                </a></li>
+                <li><a href="guidelines" class="guidelines">
+                    <i class="fas fa-question-circle"></i>
+                    <span class="navigation-item">Guidelines</span>
+                </a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <p>Pages are currently being upgraded. Started on June 8th, 2023 AT 12:13 AM (PDT).</p>
         </div>
     </body>
     <script>
+        const MainContent = document.getElementById('main');
         function setMainContentHeight() {
             var WindowHeight = window.innerHeight;
-            var MainContent = document.getElementById('main-content');
             MainContent.style.height = WindowHeight + 'px';
         }
         window.addEventListener('load', setMainContentHeight);
